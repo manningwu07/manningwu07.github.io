@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manning's Personal Website</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="./src/style.css" rel="stylesheet">
+</head>
+
+<body style="color: rgba(243, 244, 245, 0.965); background-color: #171717;">
+    <!-- Navbar -->
+    <nav class="px-4 py-2 flex justify-between items-center sticky top-0 z-50" style="background-color: #171717;">
+        <div class="hidden sm:flex">
+            <span class="nav-item font-bold text-2xl"><a href="#home">Home</a></span>
+        </div>
+        <button id="menu-btn" class="focus:outline-none sm:hidden right-0">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+        <div id="navbar-supported-content" class="hidden sm:flex">
+            <ul class="flex flex-col sm:space-x-4 sm:flex-row">
+                <li class="nav-item"><a href="#about-me">About</a></li>
+                <li class="nav-item"><a href="#web-dev-projects">Web Dev Projects</a></li>
+                <li class="nav-item"><a href="#personal-growth">Self-Improvement</a></li>
+                <li class="nav-item"><a href="https://drive.google.com/file/d/1P3isXphufe6Wd2qV3v-cnJXZYPcpQyNb/view"
+                        target="_blank">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Overlay -->
+    <div id="overlay" class="flex sm:hidden">
+        <div class="m-4">
+            <button id="close-btn" class="absolute top-4 right-4 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+            <ul class=" text-lg space-y-2">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#about-me">About</a></li>
+                <li class="nav-item"><a href="#web-dev-projects">Web Dev Projects</a></li>
+                <li class="nav-item"><a href="#personal-growth">Self-Improvement</a></li>
+                <li class="nav-item"><a href="https://drive.google.com/file/d/1P3isXphufe6Wd2qV3v-cnJXZYPcpQyNb/view"
+                        target="_blank">Resume</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div id="content-container">
+        <section id="home" class="bg-willis md:bg-lake">
+            <div class="flex items-center image-height">
+                <div id="text-content" class="w-full ml-6 mr-9/20 md:ml-11/20 md:mr-0">
+                    <div style="padding-right: 5%; width: 95%;">
+                        <h1 class="font-bold mb-4 text-5xl sm:text-6xl md:text-7xl">I'm Manning Wu,</h1>
+                        <div class="flex flex-wrap items-center justify-start">
+                            <div class="cd-words-wrapper text-2xl xs:text-3xl md:text-4xl lg:text-5xl">
+                                <span class="cd-word">&nbsp;Developer</span>
+                                <span class="cd-word">n&nbsp;Engineer</span>
+                                <span class="cd-word">&nbsp;Self Improvement Enthusiast</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-me" class="lg:mx-14 md:mx-10 sm:mx-8 xs:mx-4">
+            <div classs="header">
+                <p class="text-xs sm:text-base text-gray-400 text-center mt-6 mb-3">Get to know me</p>
+                <h1 class="text-3xl xs:text-4xl sm:text-5xl text-center font-bold">About Me</h1>
+            </div>
+            <div class="introduction-container lg:flex lg:justify-center mx-auto lg:w-960 2xl:w-1440">
+                <img src="src/images/Octopus.jpg" class="my-10 hidden 2xl:hidden lg:mx-0 sm:block sm:mx-auto"
+                    width="426px">
+                <div class="content-block flex-col items-center">
+                    <div class="my-10 ml-10 mr-10 lg:mr-0 2xl:mr-10">
+                        <h6 class="2xl:text-3xl lg:text-2xl xs:text-xl text-lg lg:mb-10 sm:mb-6 mb-3 font-bold">I'm
+                            Manning Wu, an engineer who enjoys personal
+                            development
+                        </h6>
+                        <div class="2xl:text-2xl md:text-xl xs:text-lg mb-10">Hello, and welcome to my personal website.
+                            I'm a rising high
+                            school senior who's just learning web development. Currently, I'm just building my
+                            portfolio and so it may feel like the website isn't as professional as a person who's
+                            got a good looking resume. However, I'll be building out websites and quickly
+                            learn so that I can become a professional web developer with experinence under my belt.
+                            I've had 2 major pivots of my life where I've deeply focused on something niche, and
+                            those
+                            are being on self improvement (Aug 2022-Present) and being a web developer (Oct
+                            2023-Present). Check em out below.</div>
+                        <address id="contact-info">
+                            <div class="sm:mb-4 sm:block flex flex-col">
+                                <div class="my-0.5 sm:my-0 inline-block contact-width-info whitespace-nowrap">
+                                    <span class="inline">Name: </span>
+                                    <p class="inline">Manning Wu</p>
+                                </div>
+                                <div class="my-0.5 sm:my-0 inline-block contact-width-info">
+                                    <p class="inline whitespace-nowrap">Email: <a href="mailto:manningwu123@gmail.com"
+                                            class="inline contact-information">manningwu123@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="sm:mb-4 sm:block flex flex-col">
+                                <div class="my-0.5 sm:my-0 inline-block contact-width-info">
+                                    <span class="inline">Age: </span>
+                                    <p class="inline">17</p>
+                                </div>
+                                <div class="my-0.5 sm:my-0 inline-block contact-width-info">
+                                    <span class="inline">From: </span>
+                                    <p class="contain-inline-size inline">CA, USA</p>
+                                </div>
+                            </div>
+                        </address>
+                    </div>
+                </div>
+                <img src="src/images/Bike.jpg" class="my-10 hidden 2xl:block 2xl:mx-0" width="680px">
+            </div>
+        </section>
+        <section id="web-dev-projects" class="lg:mx-14 md:mx-10 sm:mx-8 xs:mx-4">
+            <div class="projects-block mx-auto lg:w-960 2xl:w-1440">
+                <div class="projects-header">
+                    <p class="text-xs sm:text-base text-gray-400 text-center mt-6 mb-3">Web development projects I've
+                        created</p>
+                    <h1 class=" text-3xl xs:text-4xl sm:text-5xl text-center font-bold mb-10">Projects</h1>
+                </div>
+                <div class="flex flex-wrap justify-center mx-auto lg:w-960 2xl:w-1440 projects-container">
+                    <!-- Add DestimulAI to this if you can get another project (so 6 in total would look nice)-->
+                    <div class="max-w-full lg:max-w-1/2">
+                        <div class="m-1/100 project">
+                            <img src="src/images/Destimulate_YT.jpg" id="Destimulate-YT">
+                            <span class="project-name">Destimulate-YT</span>
+                        </div>
+                    </div>
+                    <div class="max-w-full lg:max-w-1/2">
+                        <div class="m-1/100 project">
+                            <img src="src/images/GPT_Links.jpg" id="GPT-Links">
+                            <span class="project-name">GPT-Links</span>
+                        </div>
+                    </div>
+                    <div class="max-w-full lg:max-w-1/2">
+                        <div class="m-1/100 project"><img src="src/images/Focused_Calendar.jpg" id="Focused-calendar">
+                            <span class="project-name">Focused-calendar</span>
+                        </div>
+                    </div>
+                    <div class="max-w-full lg:max-w-1/2">
+                        <div class="m-1/100 project"><img src="src/images/AProjects.png" id="AProjects">
+                            <span class="project-name">Coming soon</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="project-display" class="hidden">
+                    <div id="Destimulate-YT-container" class="invisible">
+                        <div class="return-home text-5xl text-neutral-300 text-right">X</div>
+                        <h1 class="text-center text-5xl font-bold mt-2 mb-2">Destimulate Youtube</h1>
+                        <div class="text-center text-xs italic mb-9">Dec. 2023 - Jan. 2024</div>
+                        <div class="project-content">
+                            <div class="flex">
+                                <div class="text-xl w-9/20">This project is a google chrome extension designed to
+                                    block out distracting elemenets of youtube. It holds a special place in my heart
+                                    because it was one of the larger motivators that drove me into web development.
+                                    I created this project in order to not make youtube as big of a distraction. I
+                                    enjoyed the project so
+                                    much that I ended up upgrading it in May 2024 for an engineering project at
+                                    school with my friends. Go check it out - its on the website (Coming soon).
+                                </div>
+                                <img src="src/images/Destimulate_YT_1.png" class="ml-6"
+                                    alt="An image showcasing Destimulate YT's features" width="50%">
+                            </div>
+                            <div class="flex justify-center my-12 mx-auto video-container"><iframe width="768"
+                                    height="100%" src="https://www.youtube.com/embed/Zx2ET_ljR34" frameborder="0"
+                                    allowfullscreen></iframe></div>
+                            <div class="flex mb-6">
+                                <img src="src/images/Destimulate_YT_2.png" class="mr-6"
+                                    alt="Display of what user settings of Destimulate YT looks like" width="25%"
+                                    height="auto">
+                                <div class="text-xl">Destimulate Youtube may be very useful. However, it's
+                                    very simple in terms of how it works. All it does is simply use a bit of
+                                    Javascript to locate the elements that are distracting (eg thumbnails, shorts,
+                                    comments) and either delete them, or hide them. There are easy ways to do both
+                                    of these for those who don't have a CS background. Other than that core feature,
+                                    I just added a user setting toggle that sets the
+                                    script to delete or hide elements based on what the user wants. I've learned so
+                                    much, from the basics of javascript and understanding HTML DOM structures to
+                                    grappling with chrome extension setups and github documentation. Overall, an
+                                    amazing beginner project and a useful tool to my life.
+                                    <br>
+                                    <br>
+                                    Here is the public chrome extension: <a
+                                        href="https://chromewebstore.google.com/detail/destimulate-yt/ennonaillbjlamhdfokhnghbmnfodeja"
+                                        target="_blank" class="text-blue-400">Extension Link</a>
+                                    <br>
+                                    Here is the github: <a href="https://github.com/manningwu07/destimulate-YT.git"
+                                        class="text-blue-400">Github</a>
+                                </div>
+                            </div>
+
+                            <div class="text-center my-10 text-xs text-gray-600">**Hit the backspace to return home
+                                (or scroll up to click the X)**</div>
+                        </div>
+                    </div>
+                    <div id="GPT-Links-container" class="invisible">
+                        <div class="return-home text-5xl text-neutral-300 text-right">X</div>
+                        <h1 class="text-center text-5xl font-bold text-white mb-3">GPT Links</h1>
+                        <div class="text-center text-xs italic mb-9">Mar. 2024 - Apr. 2024</div>
+                        <div class="project-content">
+                            <div class="text-xl">One of my favorite projects to build, GPTLinks was a
+                                chrome extension that utilized webscraping and regex so that it can feed large
+                                texts of data to ChatGPT. This way, users don't need to copy and paste these
+                                chunks of text from a website so that ChatGPT can have context or analyize
+                                website content. However, this project has been discontinued with the addition
+                                of ChatGPT being able to access the web itself, which is why it isn't on chrome
+                                extensions.
+                            </div>
+                            <div class="text-xl mt-6">I enjoyed making this project, and it severely put my
+                                resilience to the test. Unexpected obstacles popped up all over the
+                                place, such as learning how to web-scrape and filter the right text, painfully
+                                figuring out the structure and functions of ChatGPT's javascript so that I can
+                                fit my code in without breaking the chatbot, avoiding CORS policies, etc.
+                                Problem after problem ended up extending this project from 2 weeks into 2
+                                months, and I finished on April 2024. On the way, I learned so much, from
+                                analyzing front-end code, to creating cloud functions, and the asynchronous
+                                nature of JS. It has greatly expanded my knowledge about web development, and
+                                has allowed me to take a look into backend JS coding, which I will probably
+                                expand on later.
+                                <br>
+                                <br>
+
+                                <br>
+                                Here is the github: <a href="https://github.com/manningwu07/GPT-Links.git"
+                                    class="text-blue-400">Github</a>
+                            </div>
+
+                            <div class="flex justify-center my-12 mx-auto video-container">
+                                <iframe width="768" height="auto" src="https://www.youtube.com/embed/cz_i7kKj9vM"
+                                    frameborder="0" allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="text-center my-10 text-xs text-gray-600">**Hit the backspace to return home
+                                (or scroll up to click the X)**</div>
+                        </div>
+                    </div>
+                    <div id="Focused-calendar-container" class="invisible">
+                        <div class="return-home text-5xl text-neutral-300 text-right">X</div>
+                        <h1 class="text-center text-5xl font-bold text-white mb-3">Focused Calendar</h1>
+                        <div class="text-center text-xs italic mb-9">Mar. 2024</div>
+                        <div class="project-content">
+                            <div class="flex">
+                                <div class="text-xl w-9/20 mr-6">There are 2 main parts to this project. The first part
+                                    is a manual block, where the user puts in website domains ahead of time and then
+                                    when they involunteraily access it later, the extension will auto-block the user
+                                    from accessing the website. It's very similar to the cold turkey app or the
+                                    chrome extension blocksite in that sense. The second part was to access the
+                                    user's google calendar, and based on the event, will use AI to actively
+                                    determine if the website is related to the event or not when the user opens a
+                                    website during an event.
+                                </div>
+                                <img src="src/images/Focused_Calendar_1.png"
+                                    alt="Display of what user settings of focused calendar looks like" width="55%"
+                                    height="auto">
+                            </div>
+                            <div class="flex justify-center my-12 mx-auto video-container"><iframe width="768px"
+                                    height="auto" src="https://www.youtube.com/embed/bMX3WtPdT4U" frameborder="5"
+                                    allowfullscreen></iframe></div>
+                            <div class="flex mb-6">
+                                <img src="src/images/Focused_Calendar_2.png" class="mr-6"
+                                    alt="A picture showcasing focused calendar's features" width="50%" height="auto">
+                                <div class="text-xl w-9/20"> With the AI revolution and the use of
+                                    OpenAI API, I thought I could leverage that in order to automatically block
+                                    websites that aren't related to the google calendar event. However, it was
+                                    impractical to dynamically block since OAuth2.0 work only on google chrome, which
+                                    restricted my extension
+                                    usage to people who used google chrome only (and not other chromium based
+                                    browsers such as arc, firefox, and opera), and the cost of the API was too
+                                    expensive. Also I needed a server or else API keys would
+                                    be exposed. However, this project was still a
+                                    sucuess in the sense that I was able to learn along the way, such as OAuth2.0,
+                                    API, dependencies, and even some backend javascript.
+                                    <br>
+                                    <br>
+                                    Here is the github: <a href="https://github.com/manningwu07/focusedCalendar.git"
+                                        class="text-blue-400">Github</a>
+                                </div>
+                            </div>
+                            <div class="text-center my-10 text-xs text-gray-600">**Hit the backspace to return home
+                                (or scroll up to click the X)**</div>
+                        </div>
+                    </div>
+                    <div id="AProjects" class="invisible">
+                        <!-- replace id = "AProjects" with id = "AProjects-container" for JS click to work.
+                            Do this once you have the project either finished or been there for long enough to yap about it-->
+                        <div class="return-home text-5xl text-neutral-300 text-right">X</div>
+                        <h1 class="text-center text-5xl font-bold text-white mb-3">AProjects</h1>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="personal-growth" class="lg:mx-14 md:mx-10 sm:mx-8 xs:mx-4">
+            <div class="self-improvement-block mx-auto lg:w-960 2xl:w-1440">
+                <div class="self-improvement-header">
+                    <p class="text-xs sm:text-base text-gray-400 text-center mt-6 mb-3">Cool stuff that I've done</p>
+                    <h1 class="text-3xl xs:text-4xl sm:text-5xl  text-center font-bold mb-10">Personal Growth Portfolio
+                    </h1>
+                </div>
+                <div class="self-improvement-container flex flex-wrap justify-evenly">
+                    <div class="max-w-full lg:max-w-1/3 portfolio">
+                        <div class = "m-1/100" id="purpose">
+                            <img src="src/images/Question_Mark.jpg">
+                            <span class="portfolio-name">What's this and why does this matter?</span>
+                        </div>
+                    </div>
+                    <div class="max-w-full lg:max-w-1/3 portfolio">
+                        <div class = "m-1/100" id="story">
+                            <img src="src/images/My_Story.jpeg">
+                            <span class="portfolio-name">My Story</span>
+                        </div>
+                    </div>
+                    <div class="max-w-full lg:max-w-1/3 portfolio">
+                        <div class = "m-1/100" id="accomplishments">
+                            <img src="src/images/Accomplishment.jpg">
+                            <span class="portfolio-name">Accomplishments</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="personal-growth-display" class="hidden">
+                    <div id="purpose-container" class="invisible">
+                        <div class="return-home text-5xl text-neutral-300 text-right">X</div>
+                        <h1 class="text-3xl md:text-4xl lg:text-5xl text-center font-bold mt-2 mb-14">Self improvement introduction
+                        </h1>
+                        <div class="text-base sm:text-lg lg:text-xl my-3 md:my-6 project-content">
+                            <div>
+                                Personal Growth or Self-improvement is the process of consciously seeking to enhance
+                                one's knowledge, skills, character, and/or overall quality of life. It's the activity
+                                of identifying personal goals and aspirations, acknowledging areas of weakness or
+                                potential growth, and taking proactive steps to develop oneself. This can encompass
+                                a wide range of activities, from pursuing education and optimizing productivity
+                                to cultivating healthier habits, improving relationships, and fostering mental and
+                                emotional well-being.
+                                It's a lifelong journey that encourages people to become the best versions of
+                                themselves, continually evolving and adapting to meet the
+                                challenges and opportunities life presents. The beauty is that this activity can be
+                                done by anyone, at any time, and regardless of who they are. As long as individuals
+                                put in the effort, they will see the results - this is exactly why I love the game of
+                                personal development so much.
+                                <br>
+                                <br>
+                            </div>
+                            <div>Whether you choose to actively work on yourself or
+                                not, a certain caliber of character is being built that shapes who you are. However,
+                                with self improvement, we can take that into our own hands
+                                Instead of passively letting the enviornment, subconsious behaviors, and the people
+                                around you determine your life, you can determine your own character, your own habits,
+                                and your own mindsets to become the person you wish to become. Especially in an
+                                enviornment where attention is the new currancy and modern innovations take advantage
+                                of pre-built psychology (eg FOMO, lust, dopamine systens) to systemically force their
+                                customers to use their products, it has become more evident
+                                and important to discipline ones self and have a clear cut purpose in mind. This is why
+                                self improvement matters so much; the lifestyle has become a fundemental cornernstone
+                                for anyone who wishes to accomplish something in life. By taking on
+                                the journey of self improvement, you can increase productivity, focus, resilience,
+                                self-awareness, adaptablitiy, compassion, empathy, and individual empowerment to
+                                whatever extent you wish. It builds character in a way that no external source can do.
+                                The ripple effects include significantly greater overall joy in life, the formation of
+                                new, healthier, and strengthened relationships, immense jumps in productivity, sharper
+                                thinking and self-awareness, and greatly improved overall health.
+                                <br>
+                                <br>
+                                This does sound like a silver bullet, but it is a tough silver bullet to take. Its a
+                                continuious journey that requires commitment, discipline, and time to craft. I've been
+                                living the lifestyle of someone on self improvement for nearly 2 years and I still feel
+                                like I have so much to go and so much to learn - about my emotions, my past, my work
+                                potential. But isn't that the beauty of life, to keep discovering, adapting, and
+                                experiencing. If you're interested in starting self improvement, just pick an area you
+                                wish to be better at and just start pouring hours into getting that idealized version of
+                                that aspect into reality (eg I want to be fit, so I focus ruthlessly on exercising,
+                                diet, researching best techniques, crafting an identiy around being an athlete, etc.) or
+                                you can join self improvement communities and they can get you up to speed.
+                            </div>
+                            <div class="text-center my-10 text-xs text-gray-600">**Hit the backspace to return home
+                                (or scroll up to click the X)**</div>
+                        </div>
+                    </div>
+                    <div id="story-container" class="invisible">
+                        <div class="return-home text-5xl text-neutral-300 text-right">X</div>
+                        <h1 class="text-center text-5xl font-bold mt-2 mb-2">The Origins
+                        </h1>
+                        <div class="text-base sm:text-lg lg:text-xl my-3 md:my-6 project-content">
+                            <div>
+                                Before discovering the world of self improvement, I was an average kid who just
+                                followed the school system and my parents - get good grades, make friends at school,
+                                have some
+                                extraciriculars that I didn't really try in because my parents forced me to do them, and
+                                play in the digital world. Although I always knew at the back of my mind that I was
+                                addicted to the internet and especially to video games, wasn't everybody? It was an
+                                ignorant existance, and up to 2019, everything felt fine. Everything felt normal.
+                                <br>
+                                <br>
+                                Everyone knows what happened in 2020. I remember being in 7th grade in my 6th period
+                                class having our teacher announce to us that today was apparently the last day we'd have
+                                school for an "unknown amount of time". Following what the school told us, we went
+                                online to continue our learning, and that temptation at being at home and the first
+                                introduction to discord unlocked a pandora's box. A new parrallel of video game playing
+                                and online indulgence. I still vividly remember playing minecraft for hours at a time
+                                during school hours, laughing to memes with my online friends, and attempting to take
+                                screenshots of each other on zoom meetings. But, as the online year came and went, and
+                                others adjusted back to a regular life, I still stayed stuck in the online realm.
+                                Anytime I could get my hands on my phone, or on my computer, a video game would always
+                                be in the background. Sometimes, I'd get up at 2AM just to grind a nightly session of
+                                roblox. The amount of things I sacrificed to feed my ever-starving video game addiction
+                                was unparralleled.
+                                <br>
+                                <br>
+                                The thing that made me snap out of this pigeon hole was that even my video game friends
+                                were starting to move on. They were taking classes, working at jobs, and teaching skills
+                                to younger children. It felt
+                                shameful to have done nothing but play games all summer, so shameful that I got pissed;
+                                pissed at video games, pissed at myself, pissed at the other habits like eating junk
+                                food and having youtube and discord to assist my video game addiction. I was done with
+                                games, and I wanted out.
+                                <br>
+                                <br>
+                                With nothing to my name, and all the challenges ahead of me, there was only relentless
+                                determination. After weeks of experimentation and research, I realized the only way
+                                forward was to replace these addictions with healthier hobbies. I created the four
+                                cornerstone activities that would eventually become the foundation of my self
+                                improvement journey: Exercise, Meditation, Reading, and Journaling. I knew that I needed
+                                to train and maximize my physical, mental, and spiritual health if I were to reclaim my
+                                life. To integrate these four habits into my life, I created a daily routine to
+                                reconstruct my personal habits. Where I once was sluggishly waking up at 7:30am to catch
+                                the bus for school, my morning routine consisted of a 20 minute journaling session, a 10
+                                minute meditation, a 5 minute cold shower, and a 20 minute cardio workout all before
+                                8:30am. Afterschool, instead of playing rounds of clash royale on the bus home with my
+                                friends, I biked to the gym and spent 75 minutes weightlifting. Before I went to bed, I
+                                educated myself by reading for 45 minutes rather than hyperstimulate my brain with
+                                youtube or video games.
+                                <br>
+                                <br>
+                                The first 2 months of this transformation was a daily mental battleground, where the
+                                allure of reverting to the comfort of hedonic pleasures clashed with my unwavering
+                                resolve to take back my life. In these moments, discipline and humility emerged as my
+                                guiding principles. The creation of these very tough habits required the commitment to
+                                show up even when I didn't want to, and to resist the pleasures even though I felt like
+                                it. It also forced me to acknowledge and learn from setbacks while cultivating the
+                                patience to persevere through adversity. Each small victory served as a reminder of my
+                                capacity for growth and resilience, fueling my determination to press onward despite the
+                                obstacles that lay ahead. As the days went past, I felt more and more capable of
+                                resisting the urges to waste time, and I slowly adjusted to my new identity.
+                                <br>
+                                <br>
+                                After 4 grueling months filled with progress, setbacks, victories, and losses, I didn't
+                                feel the need to go back to the habitual distractions that once had complete control
+                                over me. This project was a holistic transformation of my physical, mental, and
+                                spiritual well-being, and I didn't expect my life to take such a pivotal turn. I have
+                                emerged stronger, more resilient, and deeply enriched by this experience, and it opened
+                                a whole new world of challenges for me to tackle that I never even knew existed before
+                                embarking on this journey. As I stand at the threshold of future endeavors, I carry with
+                                me the invaluable lessons gleaned from this journey, ready to confront challenges with
+                                discipline, humility, and perseverance.
+                            </div>
+
+
+                            <div class="text-center my-10 text-xs text-gray-600">**Hit the backspace to return home
+                                (or scroll up to click the X)**</div>
+                        </div>
+                    </div>
+                    <div id="accomplishments-container" class="invisible bg-gray-100 p-8 rounded-lg shadow-lg">
+                        <div class="return-home text-5xl text-neutral-300 text-right cursor-pointer">X</div>
+                        <h1 class="text-center text-5xl font-bold mt-2 mb-6 text-gray-50">Projects</h1>
+                        <div class="self-improvement-projects-container">
+                            <div class="text-base sm:text-lg lg:text-xl project-content space-y-8">
+                                <div id="dopamineDetox" class="bg-zinc-100 p-6 rounded-lg shadow-md">
+                                    <div class="text-left text-3xl font-semibold text-gray-800 mb-4">Dopamine Detox
+                                    </div>
+                                    <div class="detox-content space-y-4 text-gray-700">
+                                        <div class="what-it-is">
+                                            For those who don't know what a dopamine detox is, it's a challenge of
+                                            temperance. The person on the challenge just goes cold turkey on their
+                                            addictions for a certain span of weeks, and restricts themselves from
+                                            getting that hedonic high you feel whenever you do something really fun for
+                                            a certain period of time. This is done so that you get rid of the accustomed
+                                            "high state" from unnaturally easy ways to get dopamine (video games, social
+                                            media, junk food, YT, etc.), allowing you to enjoy the truly joyful things
+                                            in life. Usually, it lasts for about 2 weeks, but doing it for a week, 4
+                                            days, or even a year is still going to benefit.
+                                        </div>
+                                        <div class="what-I-did">
+                                            To me, this project is a recurring activity. The dopamine detox is perfect
+                                            to start a season of work and productivity, and so I usually cycle it once
+                                            per 3-4 months. I've done at least 6 separate detoxes, all with varying
+                                            lengths and rules depending on what I want to optimize for. For example, on
+                                            my first detox when I left music out, I realized music was actually being
+                                            destructive towards my goals, so I banned it during my next dopamine detox
+                                            cycle. In addition, I realized I needed a channel of communication, so I
+                                            opened up my discord again for that purpose. However, the main goal of
+                                            dopamine detoxes is to reset my mind so that I can do something very
+                                            difficult with much less resistance.
+                                        </div>
+                                        <div class="what-I've-learned">
+                                            This recurring project has and will continue to humble, discipline, and
+                                            empower me. I've learned so much when it comes to my psyche, how I can use
+                                            that to my own advantage, the nuanced relationships between external factors
+                                            and intrinsic motivation and behavior, and so much more. Not only has the
+                                            structure and mindset of a dopamine detox tremendously boosted my
+                                            productivity, but it also just makes me a more joyful and grateful person.
+                                            It's one of the best tools anyone can learn, and this project was the reason
+                                            why I was able to stay motivated and get through the chasm of pain and toil
+                                            when I first started out my self-improvement journey. I owe a lot to this
+                                            concept.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="bingeRead" class="bg-zinc-100 p-6 rounded-lg shadow-md">
+                                    <div class="text-left text-3xl font-semibold text-gray-800 mb-2">20 fiction books in
+                                        40
+                                        days challenge</div>
+                                    <div class="text-xs text-gray-800 mb-4">Jan. 28, 2024 - Mar. 7, 2024</div>
+                                    <div class="detox-content text-gray-700 space-y-4">
+                                        <div class="what-I-did">
+                                            This project was supposed to be 30 books in 30 days and I started this
+                                            because I read one book of the hunger games to just re-read fiction and I
+                                            fell in love with it - took 2 days for me to finish the series. After that
+                                            fiasco, I just decided to continue reading, and made it into a fun
+                                            challenge. I genuinely tried, but books are difficult to speed read without
+                                            having their value being destroyed. Most of the books I read were fictional,
+                                            and I did this as a fun challenge. Each fictional book was approximately 350
+                                            pages,
+                                            and I spent an average of 6 hours per day dedicated to reading. Even my
+                                            school work came after my reading, and although I kept my grades up, it was
+                                            very tedious. Some book series I read were the trilogy "The Hunger Games",
+                                            the trilogy and its fourth add-on "Legend", and the entire series "Orphan X"
+                                            (9 books). I also read and finished a non-fiction book as well, but we won't
+                                            count it to make the numbers look nicer.
+                                        </div>
+                                        <div class="what-I've-learned">
+                                            Although it was made from an impulsive decision, I don't regret it and have
+                                            surprisingly learned a good deal just binge-reading for 40 days straight.
+                                            When I was young, I never enjoyed reading at all, my parents would force me
+                                            to read books. However, this experience taught me that as long as you put in
+                                            the time, you can enjoy anything. I've substantially improved my vocabulary,
+                                            my speaking, reading, and writing capabilities, and my compassion and
+                                            empathy for people. Definitely recommend reading fiction to anyone who has
+                                            the bandwidth to do it, but don't get carried away like I did because with
+                                            good books, it's very easy.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="oneHundredFears" class="bg-white p-6 rounded-lg shadow-md">
+                                    <div class="text-left text-3xl font-semibold text-gray-800 mb-4">100 fears challenge
+                                    </div>
+                                    <div class="text-xs text-gray-800 mb-4">Apr. 2, 2024 - Present</div>
+                                    <div class="detox-content space-y-4 text-gray-700">
+                                        <div class="what-it-is">
+                                            Directly inspired by <a
+                                                href="https://www.rejectiontherapy.com/100-days-of-rejection-therapy"
+                                                target="_blank" class="text-blue-500">100 days rejection
+                                                therapy</a>, the 100 fears challenge is just a broader experimental
+                                            challenge where instead of the goal is to get a "no" from someone to feel
+                                            rejection, the goal is to get uncomfortable and be okay being uncomfortable
+                                            and doing scary things. Rejection is part of that, and although many of the
+                                            tasks I do are inspired from that challenge, I've also created different
+                                            challenges and put my own spin to this.
+                                        </div>
+                                        <div class="what-I-did">
+                                            This is a work in progress and I'm just over a quarter of the way left. I
+                                            expect to be finished before college apps so I can write about it but so far
+                                            it's been really fun. Many of these challenges have been socially awkward,
+                                            as I don't want to spend too much time on each individual challenge.
+                                            Therefore, many of these challenges, are tailored to getting into socially
+                                            awkward situations.
+                                        </div>
+                                        <div class="what-I've-learned">
+                                            I've learned so much about fear, courage, and discipline from this
+                                            challenge. Even though I have not finished yet, I've already seen a huge
+                                            jump in capability to take on difficult and scary things. I've also realized
+                                            how many fallacies our mind plays on us, and you can get away with much more
+                                            in the social world than most people think. I've also learned to stop caring
+                                            about what other people think of me, which is a very big personal
+                                            accomplishment for anyone. Finally, I've learned how to actually calculate
+                                            risk (because I did my research before jumping into such a difficult
+                                            challenge) and it has liberated me to do so much more than if I were to not
+                                            have these lessons I learned from these first-hand experiences. What a
+                                            journey so far, and I expect to have even more fun in the future.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center my-10 text-xs text-gray-600">**Hit the backspace to return home (or
+                            scroll up to click the X)**</div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="contact" class="py-8 flex justify-center">
+            <div class="container mx-auto text-center" style="width: 960px;">
+                <h2 class="text-2xl xs:text-3xl font-bold mb-6">Contacts:</h2>
+                <div class="flex justify-evenly px-4">
+                    <div class="flex flex-col items-center">
+                        <p class="font-bold">Email:</p>
+                        <a href="mailto:manningwu123@gmail.com">manningwu123@gmail.com</a>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <p class="font-bold">Phone:</p>
+                        <a href="tel:+17025185257">+1(702)518-5257</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+    <script src="src/js/home.js"></script>
+    <script src="src/js/webDevProjects.js"></script>
+    <script src="src/js/personalDev.js"></script>
+</body>
+
+</html>

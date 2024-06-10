@@ -1,0 +1,16 @@
+{
+  "name": "personal_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "tailwindcss build src/input.css -o src/output.css",
+    "watch": "tailwindcss build src/input.css -o src/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^4.x.x"
+  }
+}

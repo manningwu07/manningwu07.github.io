@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-item {
+    @apply hover:text-gray-400 text-white py-2 sm:py-0;
+}
+
+.cd-words-wrapper {
+    @apply inline-block relative w-max ;
+}
+
+.cd-words-wrapper div {
+    @apply transition-opacity delay-500 ease-in-out;
+}
+
+.cd-word {
+    @apply hidden;
+}
+
+.cd-word.active {
+    @apply block;
+}
+
+
+@layer utilities {
+    .bg-willis {
+      background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/src/images/Willis.jpg');
+    }
+  
+    .bg-lake {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/src/images/Lake.jpg');
+    }
+  }
