@@ -160,7 +160,8 @@
                         <div class="text-center text-xs italic mb-9">Dec. 2023 - Jan. 2024</div>
                         <div class="project-content">
                             <div class="flex">
-                                <div class="text-xl w-9/20">This project is a google chrome extension designed to
+                                <div class="text-xl w-full lg:w-9/20">This project is a google chrome extension designed
+                                    to
                                     block out distracting elemenets of youtube. It holds a special place in my heart
                                     because it was one of the larger motivators that drove me into web development.
                                     I created this project in order to not make youtube as big of a distraction. I
@@ -168,14 +169,17 @@
                                     much that I ended up upgrading it in May 2024 for an engineering project at
                                     school with my friends. Go check it out - its on the website (Coming soon).
                                 </div>
-                                <img src="src/images/Destimulate_YT_1.png" class="ml-6"
+                                <img src="src/images/Destimulate_YT_1.png" class="ml-6 hidden lg:block"
                                     alt="An image showcasing Destimulate YT's features" width="50%">
                             </div>
-                            <div class="flex justify-center my-12 mx-auto video-container"><iframe width="768"
-                                    height="100%" src="https://www.youtube.com/embed/Zx2ET_ljR34" frameborder="0"
-                                    allowfullscreen></iframe></div>
+                            <div class="hidden sm:flex justify-center sm:my-12 mx-auto video-container"><iframe
+                                    width="768" height="100%" src="https://www.youtube.com/embed/Zx2ET_ljR34"
+                                    frameborder="0" allowfullscreen class="hidden sm:block"></iframe>
+                            </div>
+                            <a href="https://www.youtube.com/embed/Zx2ET_ljR34"
+                                class="text-xl text-blue-400 block my-3 sm:hidden">Link to product display</a>
                             <div class="flex mb-6">
-                                <img src="src/images/Destimulate_YT_2.png" class="mr-6"
+                                <img src="src/images/Destimulate_YT_2.png" class="mr-6 hidden lg:block"
                                     alt="Display of what user settings of Destimulate YT looks like" width="25%"
                                     height="auto">
                                 <div class="text-xl">Destimulate Youtube may be very useful. However, it's
@@ -235,11 +239,13 @@
                                     class="text-blue-400">Github</a>
                             </div>
 
-                            <div class="flex justify-center my-12 mx-auto video-container">
+                            <div class="hidden sm:flex justify-center sm:my-12 mx-auto video-container">
                                 <iframe width="768" height="auto" src="https://www.youtube.com/embed/cz_i7kKj9vM"
-                                    frameborder="0" allowfullscreen>
+                                    frameborder="0" allowfullscree class="hidden sm:block">
                                 </iframe>
                             </div>
+                            <a href="https://www.youtube.com/embed/cz_i7kKj9vM"
+                                class="text-xl text-blue-400 block my-3 sm:hidden">Link to product display</a>
                             <div class="text-center my-10 text-xs text-gray-600">**Hit the backspace to return home
                                 (or scroll up to click the X)**</div>
                         </div>
@@ -250,7 +256,8 @@
                         <div class="text-center text-xs italic mb-9">Mar. 2024</div>
                         <div class="project-content">
                             <div class="flex">
-                                <div class="text-xl w-9/20 mr-6">There are 2 main parts to this project. The first part
+                                <div class="text-xl w-full lg:w-9/20 lg:mr-6">There are 2 main parts to this project.
+                                    The first part
                                     is a manual block, where the user puts in website domains ahead of time and then
                                     when they involunteraily access it later, the extension will auto-block the user
                                     from accessing the website. It's very similar to the cold turkey app or the
@@ -261,15 +268,17 @@
                                 </div>
                                 <img src="src/images/Focused_Calendar_1.png"
                                     alt="Display of what user settings of focused calendar looks like" width="55%"
-                                    height="auto">
+                                    height="auto" class="hidden lg:block">
                             </div>
-                            <div class="flex justify-center my-12 mx-auto video-container"><iframe width="768px"
-                                    height="auto" src="https://www.youtube.com/embed/bMX3WtPdT4U" frameborder="5"
-                                    allowfullscreen></iframe></div>
+                            <div class="hidden sm:flex justify-center sm:my-12 mx-auto video-container"><iframe
+                                    width="768px" height="auto" src="https://www.youtube.com/embed/bMX3WtPdT4U"
+                                    frameborder="5" allowfullscreen class="hidden sm:block"></iframe></div>
+                            <a href="https://www.youtube.com/embed/bMX3WtPdT4U"
+                                class="text-xl text-blue-400 block my-3 sm:hidden">Link to product display</a>
                             <div class="flex mb-6">
-                                <img src="src/images/Focused_Calendar_2.png" class="mr-6"
+                                <img src="src/images/Focused_Calendar_2.png" class="hidden lg:block lg:mr-6"
                                     alt="A picture showcasing focused calendar's features" width="50%" height="auto">
-                                <div class="text-xl w-9/20"> With the AI revolution and the use of
+                                <div class="text-xl w-full lg:w-9/20"> With the AI revolution and the use of
                                     OpenAI API, I thought I could leverage that in order to automatically block
                                     websites that aren't related to the google calendar event. However, it was
                                     impractical to dynamically block since OAuth2.0 work only on google chrome, which
@@ -309,19 +318,19 @@
                 </div>
                 <div class="self-improvement-container flex flex-wrap justify-evenly">
                     <div class="max-w-full lg:max-w-1/3 portfolio">
-                        <div class = "m-1/100" id="purpose">
+                        <div class="m-1/100" id="purpose">
                             <img src="src/images/Question_Mark.jpg">
                             <span class="portfolio-name">What's this and why does this matter?</span>
                         </div>
                     </div>
                     <div class="max-w-full lg:max-w-1/3 portfolio">
-                        <div class = "m-1/100" id="story">
+                        <div class="m-1/100" id="story">
                             <img src="src/images/My_Story.jpeg">
                             <span class="portfolio-name">My Story</span>
                         </div>
                     </div>
                     <div class="max-w-full lg:max-w-1/3 portfolio">
-                        <div class = "m-1/100" id="accomplishments">
+                        <div class="m-1/100" id="accomplishments">
                             <img src="src/images/Accomplishment.jpg">
                             <span class="portfolio-name">Accomplishments</span>
                         </div>
@@ -330,7 +339,8 @@
                 <div id="personal-growth-display" class="hidden">
                     <div id="purpose-container" class="invisible">
                         <div class="return-home text-5xl text-neutral-300 text-right">X</div>
-                        <h1 class="text-3xl md:text-4xl lg:text-5xl text-center font-bold mt-2 mb-14">Self improvement introduction
+                        <h1 class="text-3xl md:text-4xl lg:text-5xl text-center font-bold mt-2 mb-14">Self improvement
+                            introduction
                         </h1>
                         <div class="text-base sm:text-lg lg:text-xl my-3 md:my-6 project-content">
                             <div>
