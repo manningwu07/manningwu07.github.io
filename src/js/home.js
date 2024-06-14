@@ -68,27 +68,6 @@ const hideOverlay = () => {
 
 // Show overlay when menu button is clicked or hovered
 menuBtn.addEventListener('click', showOverlay);
-menuBtn.addEventListener('mouseover', showOverlay);
-
-// Keep overlay visible when mouse is over it
-overlay.addEventListener('mouseover', showOverlay);
-
-// Hide overlay when mouse leaves both menu button and overlay
-menuBtn.addEventListener('mouseleave', () => {
-    setTimeout(() => {
-        if (!overlay.matches(':hover')) {
-            hideOverlay();
-        }
-    }, 200);
-});
-
-overlay.addEventListener('mouseleave', () => {
-    setTimeout(() => {
-        if (!menuBtn.matches(':hover')) {
-            hideOverlay();
-        }
-    }, 200);
-});
 
 // Hide overlay when close button is clicked
 closeBtn.addEventListener('click', hideOverlay);
